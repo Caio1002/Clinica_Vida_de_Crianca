@@ -51,6 +51,14 @@ const routes: Routes = [
     path: 'lista-doutor',
     loadChildren: () => import('./pages/lista-doutor/lista-doutor.module').then( m => m.ListaDoutorPageModule)
   },
+  {
+    path: 'lista-consulta',
+    loadChildren: () => import('./pages/lista-consulta/lista-consulta.module').then( m => m.ListaConsultaPageModule)
+  },
+  {
+    path: 'update-consulta',
+    loadChildren: () => import('./pages/update-consulta/update-consulta.module').then( m => m.UpdateConsultaPageModule)
+  },
 
 ];
 @NgModule({
