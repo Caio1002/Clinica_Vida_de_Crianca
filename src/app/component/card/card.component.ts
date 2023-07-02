@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import {Clipboard, WriteOptions} from "@capacitor/clipboard"
 
 @Component({
   selector: 'card',
@@ -6,6 +7,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./card.component.scss'],
 })
 export class CardComponent  implements OnInit {
+  textoo:string="Caio Rodrigues - Dia 21 - 15h"
 
   @Output() emitter = new EventEmitter();
 
@@ -16,5 +18,14 @@ export class CardComponent  implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+
+  copiar(){
+    var options:WriteOptions = {
+      string:this.textoo
+    }
+    Clipboard.write(options).then(()=>{
+      alert("Card copiado!");
+    })
+  }
 
 }

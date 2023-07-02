@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { CadDoutorPageRoutingModule } from './cad-doutor-routing.module';
 
 import { CadDoutorPage } from './cad-doutor.page';
+import { ComponentModule } from 'src/app/component/component.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CadDoutorPageRoutingModule
+    CadDoutorPageRoutingModule,
+    ComponentModule
   ],
   declarations: [CadDoutorPage]
 })

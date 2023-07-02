@@ -1,13 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>cad-doutor</ion-title>
-  </ion-toolbar>
-</ion-header>
+<toolbar></toolbar>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">cad-doutor</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+
+  <ion-grid class="grid1">
+    <ion-row class="row1">
+      <ion-col>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+      <ion-col>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <div class="contaier-login">
+    <ion-list>
+      <ion-item>
+        <ion-label size="20px" position="stacked">Nome do Doutor:</ion-label>
+        <ion-input [(ngModel)]="doutor.name" placeholder="Digite seu nome:"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Idade:</ion-label>
+        <ion-input [(ngModel)]="doutor.idade" placeholder="Digite sua idade:"></ion-input>
+      </ion-item>
+      <ion-button (click)="save()" color="tertiary" type="submit" fill="solid" expand="block" (click)="move('lista-doutor')">
+        Cadastrar
+      </ion-button>
+      <ion-button color="danger" type="submit" fill="solid" expand="block" (click)="move('lista-doutor')">
+        Cancelar
+      </ion-button>
+    </ion-list>
+  </div>
+
 </ion-content>
+
+<footer></footer>

@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'cad-doutor',
     loadChildren: () => import('./pages/cad-doutor/cad-doutor.module').then( m => m.CadDoutorPageModule)
   },
+  {
+    path: 'lista-doutor',
+    loadChildren: () => import('./pages/lista-doutor/lista-doutor.module').then( m => m.ListaDoutorPageModule)
+  },
 
 ];
 @NgModule({
