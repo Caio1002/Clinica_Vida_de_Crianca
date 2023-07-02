@@ -1,0 +1,69 @@
+<toolbar></toolbar>
+
+<ion-content>
+
+  <ion-grid class="grid1">
+    <ion-row class="row1">
+        <ion-col>
+        </ion-col>
+    </ion-row>
+    <ion-row class="row2">
+        <ion-col>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+    <div class="contaier-login">
+      <ion-list>
+        <ion-item>
+          <ion-label size="20px" position="stacked">Nome:</ion-label>
+          <ion-input (keyup)="apiName()" [(ngModel)]="pessoa.name" placeholder="Digite seu nome:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Idade:</ion-label>
+          <ion-input [(ngModel)]="pessoa.idade" placeholder="Digite sua idade:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Genêro</ion-label>
+          <ion-input [(ngModel)]="pessoa.sexo" placeholder="Digite seu Genêro: "></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">CEP:</ion-label>
+          <ion-input (keyup)="apiCep()" [(ngModel)]="pessoa.cep" placeholder="Digite seu CEP:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Rua:</ion-label>
+          <ion-input [(ngModel)]="pessoa.rua" placeholder="Digite sua rua:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Bairro:</ion-label>
+          <ion-input [(ngModel)]="pessoa.bairro" placeholder="Digite seu bairro:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Cidade:</ion-label>
+          <ion-input [(ngModel)]="pessoa.cidade" placeholder="Digite sua cidade:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Estado:</ion-label>
+          <ion-input [(ngModel)]="pessoa.estado" placeholder="Digite seu estado:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Número:</ion-label>
+          <ion-input [(ngModel)]="pessoa.numero" placeholder="Digite o número da casa:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Telefone:</ion-label>
+          <ion-input [(ngModel)]="pessoa.telefone" placeholder="Digite seu telefone:"></ion-input>
+        </ion-item>
+        <ion-button (click)="save()" (click)="openToast()" color="tertiary" type="submit" fill="solid" expand="block">
+          Salvar
+        </ion-button>
+        <ion-button (click)="move('tab2')" color="danger" type="submit" fill="solid" expand="block">
+          Cancelar
+        </ion-button>
+      </ion-list>
+    </div>
+
+</ion-content>
+
+<footer></footer>
