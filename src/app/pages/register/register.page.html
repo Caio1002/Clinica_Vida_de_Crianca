@@ -1,11 +1,32 @@
-<toolbar></toolbar>>
+<toolbar></toolbar>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+    <div class="contaier-login">
+      <ion-list>
+        <ion-item>
+          <ion-label size="20px" position="stacked">Nome:</ion-label>
+          <ion-input placeholder="Digite seu nome:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">E-mail:</ion-label>
+          <ion-input placeholder="Digite seu e-mail:"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="stacked">Senha:</ion-label>
+          <ion-input placeholder="Digite sua senha: " type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-row>
+        <ion-col>
+            <ion-button (click)="move('login')" color="tertiary" type="submit" fill="solid" expand="full">
+                Cadastrar
+            </ion-button>
+        </ion-col>
+    </ion-row>
+  </div>
+
 </ion-content>
 
 <footer></footer>
+
