@@ -1,5 +1,19 @@
 <toolbar></toolbar>
 
 <ion-content [fullscreen]="true">
+    
+    <ion-list>
+        <ion-button color="tertiary" type="submit" fill="solid" expand="block" (click)="move('agend-consulta')">
+            Agendar consulta
+        </ion-button>
+
+        <ion-button color="tertiary" type="submit" fill="solid" expand="block" (click)="move('cad-doutor')">
+            Cadastrar doutor
+        </ion-button>
+
+        <ion-button color="tertiary" type="submit" fill="solid" expand="block" (click)="move('form-cadastro')">
+            Cadastrar paciente
+        </ion-button>
+    </ion-list>
 
 </ion-content>
